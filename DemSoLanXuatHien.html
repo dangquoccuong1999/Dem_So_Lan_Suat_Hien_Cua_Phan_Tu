@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt('Mời bạn nhập số ');
+
+    function random() {
+        let arrNumber = [];
+        for (let i = 0; i < 100; i++) {
+            arrNumber[i] = Math.floor(Math.random() * 100);
+        }
+        numberRanDomCout(arrNumber);
+    }
+
+    function numberRanDomCout(arrNumber) {
+        let cout = 0;
+        for (let i = 0; i < 100; i++) {
+            if (number == arrNumber[i]) {
+                cout++;
+            }
+        }
+        document.write(cout);
+    }
+
+    random();
+
+</script>
+</body>
+</html>
